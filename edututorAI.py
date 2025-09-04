@@ -1,8 +1,12 @@
-# File: edu_ai_assistant.py
+# File: edututorai.py
 
 import gradio as gr
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
+
+# Embed filename
+filename = "edututorAI.py"
+print(f"Running script: {filename}")
 
 # Load model and tokenizer
 model_name = "ibm-granite/granite-3.2-2b-instruct"
